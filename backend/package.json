@@ -7,7 +7,6 @@
     
     "server": "nodemon server.js"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
