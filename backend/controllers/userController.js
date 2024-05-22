@@ -1,6 +1,6 @@
 import userModel from "../models/userModel.js";
 import jwt from 'jsonwebtoken'
-import bcrypt from 'bcrypt'
+// import bcrypt from 'bcrypt'
 import validator from 'validator'
 
 // Login user
@@ -14,13 +14,13 @@ const loginUser = async (req, res) => {
                 message: "This email doesn't exists"
             })
         }
-        const isMatch = await bcrypt.compare(password, user.password);
-        if(!isMatch) {
-            return res.json({
-                success: false,
-                message: "Incorrect password"
-            })
-        }
+        // const isMatch = await bcrypt.compare(password, user.password);
+        // if(!isMatch) {
+        //     return res.json({
+        //         success: false,
+        //         message: "Incorrect password"
+        //     })
+        // }
         const token = createToken(user._id);
         res.json({
             success: true,
