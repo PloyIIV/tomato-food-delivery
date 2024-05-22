@@ -19,6 +19,7 @@ async function init() {
         credential: true,
         methods: ["GET", "POST", "PUT", "DELETE"]
     }
+    app.options("", cors(corsConfig))
     app.use(cors(corsConfig));
 
     // db connection
