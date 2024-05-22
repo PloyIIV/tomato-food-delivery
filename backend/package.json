@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    
-    "server": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "babel lib -d dist/lib | babel helper -d dist/helper"
   },
   "engines": {
     "node": "18.x"
