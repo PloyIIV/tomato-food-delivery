@@ -8,7 +8,7 @@ import { assets } from '../../assets/assets.js'
 
 const Orders = () => {
   
-  const url = `http://localhost:4000`
+  const url = `https://tomato-food-delivery-back.vercel.app/`
   const [orders, setOrders] = useState([])
 
   const fetchAllOrders = async () => {
