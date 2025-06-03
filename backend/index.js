@@ -15,8 +15,8 @@ async function init() {
     // middleware
     app.use(express.json());
     const corsConfig = {
-        // origin: "https://tomato-food-delivery.vercel.app/",
-        origin: "http://localhost:5174",
+        origin: "https://tomato-food-delivery.vercel.app/",
+        // origin: "http://localhost:5174",
         credential: true,
         methods: ["GET", "POST", "PUT", "DELETE"]
     }
